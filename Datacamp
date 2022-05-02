@@ -1,0 +1,39 @@
+##
+
+### 1 Read the data
+
+# Import pandas
+import pandas as pd
+data = pd.read_csv("", header = None)
+# Inspect data
+.head()
+
+### 2 Inspecting the data
+
+# Summary statistics
+.describe()
+# DataFrame information
+.info()
+
+### Splitting the dataset into train and test sets
+# Import train_test_split
+from sklearn.model_selection import train_test_split
+#Drop the features
+.drop([ ], axis = 1)
+# Split into train and test sets
+train_test_split(data, test_size=0.33, random_state=42)
+
+# Handling the missing values (part i) 
+Replace xxx with NaN : replace(xxx, np.NaN)
+Mean imputation : .fillna(data.mean(), inplace=True)
+Count the number of NaNs in the data set : data.isnull().sum())
+more frequent value as inputation:
+for col in data.columns:
+    # Check if the column is of object type
+    if data[col].dtypes == 'object':
+        # Impute with the most frequent value
+        data = data.fillna(data[col].value_counts().index[0])
+Check the number of NaNs:
+print(data.isnull().sum())
+
+###
