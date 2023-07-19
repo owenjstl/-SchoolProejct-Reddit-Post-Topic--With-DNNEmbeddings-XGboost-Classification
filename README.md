@@ -1,9 +1,1 @@
-- 👋 Hi, I’m @owenjstl
-- 👀 I’m interested in data science 
-- 🌱 I’m currently learning machine learning
-- 📫 How to reach me yaowen.o.tan@gmail.com
-
-<!---
-owenjstl/owenjstl is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+I collected Reddit post topics and applied word embedding here. To reduce the number of features, Using PCA and tsne to make sure that similar data points in high dimensional space are as close together as possible in low dimensional space for the machine learning algorithm. DNN is a good classification in this topic.
